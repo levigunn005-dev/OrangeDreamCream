@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orange Cream Dream | HouseMart Cafe</title>
+    <style>
+        :root {
+            --primary-orange: #ff6b00;
+            --secondary-orange: #ffa800;
+            --cream-bg: #fffbf7;
+            --cream-card: #fff3e6;
+            --text-dark: #2a1f1a;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--cream-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+            color: white;
+            text-align: center;
+            padding: 4rem 1.5rem 5rem;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
+
+        .brand-badge {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        /* Feature Section */
+        .container {
+            max-width: 900px;
+            margin: -3rem auto 3rem;
+            padding: 0 1.5rem;
+        }
+
+        .promo-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+            padding: 2.5rem;
+            text-align: center;
+        }
+
+        .hero-emoji {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .tagline {
+            font-size: 1.5rem;
+            color: var(--primary-orange);
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+        }
+
+        /* Grid Section */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .feature-item {
+            background: var(--cream-card);
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-item h3 {
+            color: var(--primary-orange);
+            margin-bottom: 0.3rem;
+            font-size: 1.1rem;
+        }
+
+        .feature-item p {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* Store Locator Callout */
+        .location-banner {
+            background: var(--text-dark);
+            color: white;
+            padding: 2rem;
+            border-radius: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        @media (min-width: 600px) {
+            .location-banner {
+                flex-direction: row;
+                text-align: left;
+            }
+        }
+
+        .banner-btn {
+            background: var(--primary-orange);
+            color: white;
+            border: none;
+            padding: 0.9rem 1.8rem;
+            border-radius: 30px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.2s;
+            white-space: nowrap;
+        }
+
+        .banner-btn:hover {
+            background: #e05e00;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <span class="brand-badge">Exclusive at HouseMart Cafe</span>
+        <h1>Orange Cream Dream</h1>
+        <p>The timeless citrus float, crafted to perfection.</p>
+    </header>
+
+    <main class="container">
+        <div class="promo-card">
+            <div class="hero-emoji">🥤🍦</div>
+            <div class="tagline">Fizzy. Creamy. Unforgettable.</div>
+            <p class="description">
+                Experience the ultimate refreshment high! We take crisp, sparkling Orange Fanta and combine it with generous scoops of rich, velvet-smooth vanilla ice cream for a dreamlike treat.
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🍊</div>
+                    <h3>Bold Citrus Fizz</h3>
+                    <p>Authentic Orange Fanta served ice-cold for maximum pop.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">🍨</div>
+                    <h3>Velvety Vanilla</h3>
+                    <p>Premium, slow-churned vanilla ice cream float top layer.</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✨</div>
+                    <h3>Made Fresh</h3>
+                    <p>Mixed instantly at the counter right when you ask for it.</p>
+                </div>
+            </div>
+
+            <div class="location-banner">
+                <div>
+                    <h3 style="font-size: 1.3rem;">Craving a taste?</h3>
+                    <p style="opacity: 0.8; font-size: 0.95rem;">Available daily at the HouseMart Cafe./p>
+                </div>
+                <button class="banner-btn" onclick="showInfo()">Click here!</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 HouseMart Cafe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showInfo() {
+            alert("Visit the HouseMart (HM) Cafe counter today to order the Orange Cream Dream!");
+        }
+    </script>
+</body>
+</html>
